@@ -1,13 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box; }
-
-body {
+    box-sizing: border-box; 
     margin: 0;
     padding: 0;
-    min-height: 100vh;
-    font-family: "Manrope", sans-serif;
+    font-family: "Montserrat", sans-serif;
+}
+
+#header {
+    width: 100%;
+    padding-left: 10%;
+    padding-top: 0.9rem;
+    height: 5rem;
+    background-color: #02A28F;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1.2rem;
 }
