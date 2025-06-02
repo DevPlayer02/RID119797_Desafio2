@@ -7,97 +7,101 @@
     <title> The Dev News </title>
 </head>
 <body>
-    <header id="header">
+    <header class="background-primary">
         <h1> The Dev News</h1>
     </header>
-    <section id="main-content">
-        <div id="headline">
-            <img src="./assets/headline-image.svg" alt="headline image">
-        </div>
-        <div class="popular-posts">
-            <div class="popular-posts__title">
-                <h2> Posts Populares </h2>
-            </div>
-            <div class="popular-posts__cards">
-                <img src="./assets/desenvolvimento-post.svg" alt="desenvolvimento-post">
-                <div class="popular-posts__content">
-                    <h3> Desenvolvimento atual </h3>
-                    <p> 22 Agosto 2022 </p>
+    <main>
+        <section id="primary-content">
+            <figure>
+                <img src="./assets/headline-image.svg" alt="headline image">
+            </figure>
+            <div class="popular-posts">
+                <div class="card__title background-primary">
+                    <h2> Posts Populares </h2>
+                </div>
+                <div class="popular-posts__cards">
+                    <div class="popular-posts__item">
+                        <img src="./assets/desenvolvimento-post.svg" alt="desenvolvimento-post">
+                        <div class="popular-posts__content">
+                            <h3> Desenvolvimento atual </h3>
+                            <p> 22 Agosto 2022 </p>
+                        </div>
+                    </div>
+                    <div class="popular-posts__item">
+                        <img src="./assets/gitlab-post.svg" alt="gitlab-vs-github">
+                        <div class="popular-posts__content">
+                            <h3> GitLab vs GitHub </h3>
+                            <p> 22 Agosto 2022 </p>
+                        </div>
+                    </div>
+                    <div class="popular-posts__item">
+                        <img src="./assets/cafe-post.svg" alt="cafe-post">
+                        <div class="popular-posts__content">
+                            <h3> Café atrapalha? </h3>
+                            <p> 22 Agosto 2022 </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="popular-posts__cards">
-                <img src="./assets/gitlab-post.svg" alt="gitlab-vs-github">
-                <div class="popular-posts__content">
-                    <h3> GitLab vs GitHub </h3>
-                    <p> 22 Agosto 2022 </p>
+        </section>
+        <section id="second-content">
+            <div class="container">
+                <div class="card__title background-primary">
+                    <h2> Posts mais recentes </h2>
+                    <a href="#"> Ver todos </a>
+                </div>
+                <div class="recent-posts__cards">
+                    <div>
+                        <img src="./assets/card-1.svg" alt="desenvolvimento-post">
+                        <p>desenvolvimento</p>
+                        <h2>Desenvolvimento mobile</h2>
+                        <p><b>By</b>Fabio Tetsuo</p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="recent-posts__item">
+                        <img src="./assets/card-2.svg" alt="balancear-vida-post">
+                        <p>saude</p>
+                        <h2>Balancear vida profissional e pessoal</h2>
+                        <p><b>By</b>Ridho Satriawan</p>
+                        <p>By Ridho Satriawan</p>
+                        <p></p>
+                    </div>
+                    <div class="recent-posts__item">
+                        <img src="./assets/card-3.svg" alt="vscode-post">
+                        <p>desenvolvimento</p>
+                        <h2>Configurando VSCode</h2>
+                        <p><b>By</b>Fabio Tetsuo</p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="recent-posts__item">
+                        <img src="./assets/card-4.svg" alt="monitores-post">
+                        <p>produtividade</p>
+                        <h2>2 monitores ou 1 ultrawide?</h2>
+                        <p><b>By</b>Fulano da Silva</p>
+                        <p></p>
+                        <p></p>
+                    </div>
                 </div>
             </div>
-            <div class="popular-posts__cards">
-                <img src="./assets/cafe-post.svg" alt="cafe-post">
-                <div class="popular-posts__content">
-                    <h3> Café atrapalha? </h3>
-                    <p> 22 Agosto 2022 </p>
+            <div >
+                <div class="card__title background-primary">
+                    <h2> Categorias </h2>
+                </div>
+                <div>
+                    <ul>
+                        <li> saude </li>
+                        <li> desenvolvimento </li>
+                        <li> produtividade </li>
+                        <li> opiniao </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="second-content">
-        <div>
-            <div>
-                <h2> Posts mais recentes </h2>
-                <a href="#"> Ver todos </a>
-            </div>
-            <div class="recent-posts__cards">
-                <img src="" alt="">
-                <p></p>
-                <h2></h2>
-                <p></p>
-                <p></p>
-                <p></p>
-            </div>
-            <div class="recent-posts__cards">
-                <img src="" alt="">
-                <p></p>
-                <h2></h2>
-                <p></p>
-                <p></p>
-                <p></p>
-            </div>
-            <div class="recent-posts__cards">
-                <img src="" alt="">
-                <p></p>
-                <h2></h2>
-                <p></p>
-                <p></p>
-                <p></p>
-            </div>
-            <div class="recent-posts__cards">
-                <img src="" alt="">
-                <p></p>
-                <h2></h2>
-                <p></p>
-                <p></p>
-                <p></p>
-            </div>
-            <div class="recent-posts__cards">
-                <img src="" alt="">
-                <p></p>
-                <h2></h2>
-                <p></p>
-                <p></p>
-                <p></p>
-            </div>
-        </div>
-        <div id="categories">
-            <h2> Categorias </h2>
-            <ul>
-                <li> saude </li>
-                <li> desenvolvimento </li>
-                <li> produtividade </li>
-                <li> opiniao </li>
-            </ul>
-        </div>
-    </section>
-
+        </section>
+    </main>
+    <footer class="background-primary">
+        <p>Copyright@The Dev News</p>
+    </footer>
 </body>
 </html>
