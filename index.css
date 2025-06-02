@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
 *,
 *::before,
 *::after {
@@ -9,64 +15,78 @@
     font-family: "Montserrat", sans-serif;
 }
 
-#header {
-    width: 100%;
+h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.background-primary {
+    background-color: #02A28F;
+}
+
+header {
     padding-left: 10%;
     padding-top: 0.9rem;
     height: 5rem;
-    background-color: #02A28F;
     color: #FFFFFF;
-    font-weight: 700;
-    font-size: 1.2rem;
     margin-bottom: 4rem;
 }
 
-#headline {
-    width: 65rem;
-    height: 35rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#headline img {
+main {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 4rem;
+    height: 100vh;
 }
 
-#main-content {
+#primary-content {
     display: flex;
-    height: 25rem;
-    align-items: flex-start;
     justify-content: center;
     gap: 1rem;
 }
 
-.popular-posts__title {
-    height: 4rem;
-    background-color: #02A28F;
-    color: #FFFFFF;
-    padding: 1rem 2rem;
+figure {
+    width: 67rem;
+    height: 35rem;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
     border-radius: 0.8rem;
 }
 
-.popular-posts__title h1 {
-    font-size: 1rem;
-    font-weight: 700;
+.popular-posts {
+    display: grid;
+    width: 30rem;
+    height: 10rem;
+    gap: 1rem;
+    border-radius: 0.8rem;
 }
 
-.popular-posts__cards {
+.card__title {
+    color: #FFFFFF;
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    width: 30rem;
+    height: 3rem;
+}
+
+.popular-posts__item {
     display: flex;
-    height: 8rem;
-    width: 35rem;
     gap: 1rem;
     box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.2);
     border-radius: 0.8rem;
     padding: 0.8rem 1rem;
-    margin-top: 1.6rem;
+    margin-top: 1rem;
 }
 
 .popular-posts__cards h2 {
@@ -79,4 +99,34 @@
     font-weight: 500;
     color: #616161;
     margin-top: 0.2rem;
+}
+
+#second-content {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.container {
+    width: 67rem;
+    height: 56rem;
+}
+
+.container .card__title {
+    width: 100%;
+}
+
+.recent-posts__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    height: 3rem;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
