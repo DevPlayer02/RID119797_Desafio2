@@ -3,10 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
     <title> The Dev News </title>
 </head>
 <body>
-    
+    <header class="background-primary">
+        <h1> The Dev News</h1>
+    </header>
+    <main>
+        <section id="primary-content">
+            <div id="headline" class="container">
+                <p> opinião </p>
+                <h1> Como é ser um desenvolvedor </h1>
+                <p><b>By</b> Fabio Tetsuo </p>
+            </div>
+            <div class="popular-posts secondary-container">
+                <div class="card__title background-primary">
+                    <h2> Posts Populares </h2>
+                </div>
+                <div class="popular-posts__cards">
+                    <div class="popular-posts__item">
+                        <img src="./assets/desenvolvimento-post.svg" alt="desenvolvimento-post">
+                        <div class="popular-posts__content">
+                            <h3> Desenvolvimento atual </h3>
+                            <p> 22 Agosto 2022 </p>
+                        </div>
+                    </div>
+                    <div class="popular-posts__item">
+                        <img src="./assets/gitlab-post.svg" alt="gitlab-vs-github">
+                        <div class="popular-posts__content">
+                            <h3> GitLab vs GitHub </h3>
+                            <p> 22 Agosto 2022 </p>
+                        </div>
+                    </div>
+                    <div class="popular-posts__item">
+                        <img src="./assets/cafe-post.svg" alt="cafe-post">
+                        <div class="popular-posts__content">
+                            <h3> Café atrapalha? </h3>
+                            <p> 22 Agosto 2022 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="second-content">
+            <div class="container">
+                <div class="card__title background-primary">
+                    <h2> Posts mais recentes </h2>
+                    <a href="#"> Ver todos </a>
+                </div>
+                <div class="recent-posts">
+                    <div class="recent-posts__cards">
+                        <div class="recent-posts__image">
+                            <img src="./assets/card-1.svg" alt="desenvolvimento-post">
+                        </div>
+                        <div class="recent-posts__content">
+                            <p class="color-primary">desenvolvimento</p>
+                            <h3>Desenvolvimento mobile</h3>
+                            <span><b>By</b> Fabio Tetsuo</span>
+                            <p>Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris
+                                convallis fusce enim odio. Vitae montes ridiculus felis.</p>
+                            <span>22 Agustus 2022</span>
+                        </div>  
+                    </div>
+                    <div class="recent-posts__cards">
+                        <div class="recent-posts__image">
+                            <img src="./assets/card-2.svg" alt="balancear-vida-post">
+                        </div>
+                        <div class="recent-posts__content">
+                            <p class="color-primary">saude</p>
+                            <h3>Balancear vida profissional e pessoal</h3>
+                            <span><b>By</b> Ridho Satriawan</span>
+                            <p>Apa itu HTML ? Buat kamu yang pernah membuat sebuah website pastinya sudah tidak asing lagi dengan yang namanya HTML.</p>
+                            <span>22 Agustus 2022</span>
+                        </div>
+                    </div>
+                    <div class="recent-posts__cards">
+                        <div class="recent-posts__image">
+                            <img src="./assets/card-3.svg" alt="vscode-post">
+                        </div>
+                        <div class="recent-posts__content">
+                            <p class="color-primary">desenvolvimento</p>
+                            <h3>Configurando VSCode</h3>
+                            <span><b>By</b> Fabio Tetsuo</span>
+                            <p>Apa itu HTML ? Buat kamu yang pernah membuat sebuah website pastinya sudah tidak asing lagi dengan yang namanya HTML.</p>
+                            <span>22 Agustus 2022</span>
+                        </div>
+                    </div>
+                    <div class="recent-posts__cards">
+                        <div class="recent-posts__image">
+                            <img src="./assets/card-4.svg" alt="monitores-post">
+                        </div>
+                        <div class="recent-posts__content">
+                            <p class="color-primary">produtividade</p>
+                            <h3>2 monitores ou 1 ultrawide?</h3>
+                            <span><b>By</b> Fulano da Silva</span>
+                            <p>Lorem ipsum dolor sit amet consectetur. Arcu tellus adipiscing sagittis tristique. Eget molestie posuere enim pretium venenatis nunc ligula donec a. Velit senectus amet nulla.</p>
+                            <span>22 Agustus 2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="categories">
+                <div class="card__title background-primary">
+                    <h2> Categorias </h2>
+                </div>
+                <div class="categories__list">
+                    <ul>
+                        <li><span class="category-name">> saúde</span><span class="category-count">(1)</span></li>
+                        <li><span class="category-name">> desenvolvimento</span><span class="category-count">(2)</span></li>
+                        <li><span class="category-name">> produtividade</span><span class="category-count">(2)</span></li>
+                        <li><span class="category-name">> opinião</span><span class="category-count">(1)</span></li>               
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer class="background-primary">
+            <p>Copyright@The Dev News</p>
+        </footer>
+    </main>
 </body>
 </html>
