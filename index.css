@@ -31,7 +31,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
 }
 
@@ -60,8 +60,9 @@ span {
 }
 
 header {
+    display: flex;
+    align-items: center;
     padding-left: 10%;
-    padding-top: 0.9rem;
     height: 5rem;
     color: #FFFFFF;
     margin-bottom: 4rem;
@@ -107,6 +108,7 @@ header {
     border-radius: 0.8rem;
     width: 21vw;
     height: 4rem;
+    box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.2);
 }
 
 .popular-posts__cards {
@@ -115,18 +117,13 @@ header {
 
 .popular-posts__item {
     display: flex;
-    height: 7rem;
+    height: 6rem;
     width: 21vw;
     gap: 1rem;
     box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.2);
     border-radius: 1rem;
     padding: 0.8rem 1rem;
     margin-top: 1rem;
-}
-
-.popular-posts__cards h2 {
-    font-size: 0.8rem;
-    font-weight: 700;
 }
 
 .popular-posts__cards p {
@@ -140,7 +137,7 @@ header {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin: 3vh 0 10vh 0;
+    margin: 3rem 0 6rem 0;
     margin-left: 1rem;
 }
 
@@ -152,11 +149,7 @@ header {
 .container .card__title {
     width: 100%;
     height: 5rem;
-}
-
-.secondary-container {
-    width: 20vw;
-    height: auto;
+    box-shadow: none;
 }
 
 .recent-posts {
@@ -168,7 +161,7 @@ header {
 
 .recent-posts__cards {
     width: 24.5vw;
-    height: 50vh;
+    height: auto;
     margin-top: 1rem;
     border-radius: 1rem;
     box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.2);
@@ -210,16 +203,15 @@ header {
     padding-left: 0;
 }
 
+.categories__list li {
+    gap: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
 li {
     margin-top: 1rem;
     color: #616161;
-}
-
-li::before {
-    content: ">";
-    margin-right: 0.5rem;
-    font-weight: 600;
-    margin-top: 1rem;
 }
 
 footer {
@@ -229,4 +221,352 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1535px) {
+    
+    h1 {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+    
+    h2 {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    
+    h3 {
+        font-size: 0.7rem;
+        font-weight: 700;
+    }
+    
+    p {
+        font-size: 0.7rem;
+        font-weight: 400;
+    }
+    
+    a {
+        font-size: 0.7rem;
+    }
+    
+    span {
+        font-size: 0.7rem;
+    }
+
+    .color-primary {
+        font-size: 0.7rem;      
+    }
+
+    .card__title { 
+        width: 25vw;
+    }
+
+    .popular-posts__item {
+        width: 25vw;
+        height: 6rem;
+    }
+
+    .popular-posts__item img {
+        width: 6rem;
+        height: 5rem;
+    }
+
+    .recent-posts__cards {
+        height: 30rem;
+        width: 24vw;
+    }
+
+    .recent-posts__image {
+        width: 100%;
+        height: 50%;
+    }
+    
+    .recent-posts__image > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #second-content {
+        margin-bottom: 5rem;
+    }
+
+    .recent-posts__cards {
+        width: 24.5vw;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    
+    h2 {
+        font-size: 0.7rem;
+        font-weight: 700;
+    }
+    
+    h3 {
+        font-size: 0.5rem;
+        font-weight: 700;
+    }
+    
+    p {
+        font-size: 0.5rem;
+        font-weight: 400;
+    }
+    
+    a {
+        font-size: 0.5rem;
+    }
+    
+    span {
+        font-size: 0.5rem;
+    }
+    
+    .color-primary {
+        font-size: 0.5rem;
+    }
+
+    header {
+        height: 4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #primary-content {
+        height: 35vh;
+        gap: 1rem;
+    }
+    
+    #headline {
+        width: 50vw;
+        height: 35vh;
+    }
+
+    .popular-posts {
+        gap: 0.5rem;
+    }
+
+    .card__title {
+        width: 24vw;
+        height: 3rem;
+    }
+
+    .popular-posts__cards p {
+        font-size: 0.5rem;
+        margin-top: 0.2rem;   
+    }
+    
+    .popular-posts__item {
+        width: 24vw;
+        height: 4rem;
+    }
+    
+    .popular-posts__item img {
+        width: 5rem;
+        height: 2.5rem;
+    }
+    
+    .recent-posts__cards {
+        width: 24.5vw;
+        height: auto;
+    }
+
+    #second-content {
+        gap: 1rem;
+        margin: 1.5rem 0 3rem 1rem;
+    }
+    
+    .container .card__title {
+        height: 3.7rem;
+    }
+    
+    .recent-posts {
+        gap: 0;
+    }
+
+    .recent-posts__cards {
+        width: 24vw;
+        height: 28vh;
+    }
+
+    .recent-posts__image {
+        width: 100%;
+        height: 50%;
+    }
+
+    .recent-posts__image > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .recent-posts__content {
+        height: 50%;
+        padding: 0.5rem 0.5rem 1rem 0.5rem;
+    }
+
+    li {
+        margin-top: 0.5rem;
+    }
+
+    footer{
+        height: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        height: 100vh;
+    }
+
+    main {
+        height: 100%;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+        font-weight: 700;
+    }
+    
+    h2 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    
+    p {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    
+    a {
+        font-size: 1.2rem;
+    }
+    
+    span {
+        font-size: 1.2rem;
+    }
+    
+    .color-primary {
+        font-size: 1.2rem;
+    }
+    
+    header {
+        justify-content: center;
+        padding-left: 0;
+        height: 7rem;
+    }
+    
+    #primary-content {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 2rem;
+    }
+    
+    #headline {
+        width: 90%;
+        margin: 0 auto 2rem auto;
+        height: 50vh;
+    }
+    
+    .card__title {
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto 0 auto;
+        height: 4rem;
+    }
+    
+    .popular-posts__cards {
+        width: 100%;
+        margin-top: 0.2rem;
+    }
+    
+    .popular-posts__item {
+        align-items: center;
+        width: 90%;
+        margin: 0 auto 1rem auto;
+        height: 8rem;
+    }
+    
+    .popular-posts__item img {
+        width: 7rem;
+        height: auto;
+    }
+    
+    .recent-posts__cards {
+        width: 90%;
+        height: auto;
+    }
+    
+    #second-content {
+        display: contents;
+        margin: 5rem 0 3rem 0;
+    }
+
+    .container {
+        width: 90%;
+        height: auto;
+        margin: 7rem auto;
+    }
+    
+    .container .card__title {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto 1rem auto;
+        height: 3.7rem;
+    }
+    
+    .recent-posts {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .recent-posts__cards {
+        width: 100%;
+        margin: 0 auto 1rem auto;
+        height: 65vh;
+        border-radius: 2rem;
+    }
+    
+    .recent-posts__image {
+        width: 100%;
+        height: 15rem;
+    }
+    
+    .recent-posts__image > img {
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .recent-posts__content {
+        height: 50%;
+        padding: 2rem;
+    }
+
+    .categories__list {
+        margin: auto 1rem
+    }
+
+    .categories__list > ul{
+        margin: auto 1rem 4rem 1rem;
+    }
+    
+    li {
+        margin-top: 1rem;
+    }
+    
+    footer {
+        height: 4rem;
+    }
+
 }
